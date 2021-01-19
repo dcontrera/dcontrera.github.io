@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+author: Daniel Contrera
 date:   2021-01-19 12:03:54 -0300
 categories: jekyll update
 ---
