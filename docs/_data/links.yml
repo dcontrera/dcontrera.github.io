@@ -1,0 +1,13 @@
+- name: Ubicación
+  link: 
+  site: map-marker
+  caption: Palermo<br>CABA<br>Argentina
+- name: Email
+  link: mailto:dcontrerasosa@gmail.com
+  site: envelope
+  caption: E-mail
+  text: dcontrerasosa@gmail.com
+- name: LinkedIn
+  link: https://www.linkedin.com/in/dcontrera/
+  site: linkedin
+  caption: LinkedIn
