@@ -1,5 +1,14 @@
 setIframe();
 header_height_fn();
+setBack();
+
+function setBack() {
+    let root = document.documentElement;
+    let face = document.getElementById('face-id');
+    let back = document.getElementById('main-back');
+    let height = face.offsetTop + face.height/2;
+    back.style.height = (parseInt(height)).toString() + 'px';
+}
 
 function header_height_fn() {
     let root = document.documentElement;
@@ -97,6 +106,8 @@ function getGrandParent(node, grandParentTag) {
 
 function setIframe() {
     let myiFrame = document.getElementById("embed-pdf");
-    let w = myiFrame.clientWidth;
-    myiFrame.height = w.toString();
+    if (myiFrame) {
+        let w = myiFrame.clientWidth;
+        myiFrame.height = w.toString();
+    }
 }

@@ -13,7 +13,7 @@ title: Home
 <!-- </header> -->
 
 
-<div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+<div id="sect-main" class="cover-container d-flex h-100 p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
         <div class="inner fixed-top" id="masthead-inner-id">
             <!-- <h3 class="masthead-brand">Cover</h3> -->
@@ -26,14 +26,11 @@ title: Home
     </header>
 
     <main role="main" class="inner cover">
-        <img class="face" src="{{site.baseurl}}/assets/images/DC.jpg">
+        <div id="cover-spacer"></div>
         <h1 class="cover-heading">{{ site.author }}</h1>
-        <h2 class="cover-heading">{{ site.position }}</h2>
+        <h2 class="cover-subheading">{{ site.position }}</h2>
+        <!-- <img class="face" src="{{site.baseurl}}/assets/images/DC.jpg"> -->
         <!-- <button ><i class="icon-arrow-down"></i></button> -->
-        <a href="#proyectos" role="button" 
-            class="btn btn-primary btn-lg fade-in">
-            <i class="icon-chevron-down" aria-hidden="true"></i>
-        </a> 
     </main>
     <!-- <div class="face-wrapp">
         <img class="face" src="{{site.baseurl}}/assets/images/DC.jpg">
@@ -41,9 +38,15 @@ title: Home
     <footer class="mastfoot mt-auto">
         <div class="inner">
             <!-- <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p> -->
-        </div>
+            <img id="face-id" class="face" src="{{site.baseurl}}/assets/images/DC.jpg">
+            <a href="#proyectos" role="button" 
+                class="btn btn-primary btn-lg fade-in">
+                <i class="icon-chevron-down" aria-hidden="true"></i>
+            </a> 
+            </div>
     </footer>
 </div>
+<div id="main-back"></div>
 <!-- <section class="sect" id="proyectos"> -->
     <!-- <div class="header-spacer"></div> -->
     <!-- <h2 id="h2-proyects-id">Proyectos</h2> -->

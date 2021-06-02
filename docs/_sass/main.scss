@@ -122,10 +122,20 @@ body {
   max-width: 42em;
 }
 .cover-heading {
-    color: #fff;
-    font-weight: 900;
+  color: #fff;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 64px;
 }
-
+.cover-subheading {
+  color: #fff;
+  font: menu;
+  font-weight: 100;
+  font-size: 32px;
+}
+#cover-spacer {
+  height: 80%;
+}
 /*
  * Header
  */
@@ -242,7 +252,7 @@ body {
   /* border-top-color: white; */
   /* border-top-color: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)); */
   /* -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00));   */
-  -webkit-border-image: -webkit-linear-gradient(red, green);
+  // -webkit-border-image: -webkit-linear-gradient(red, green);
   /* border-top-style: solid; */
 }
 
@@ -342,7 +352,7 @@ body {
   /* border-top-color: white; */
   /* border-top-color: -webkit-gradient(linear, left top, left bottom, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00)); */
   /* -webkit-border-image: -webkit-gradient(linear, left top, right top, from(#00abeb), to(#fff), color-stop(0.5, #fff), color-stop(0.5, #66cc00));   */
-  -webkit-border-image: -webkit-linear-gradient(red, green);
+  // -webkit-border-image: -webkit-linear-gradient(red, green);
   /* border-top-style: solid; */
   transition-duration: 1s;
 }
@@ -416,4 +426,17 @@ body {
   border: none;
   width: 100%;
   // height: 500px;
+}
+#sect-main > * {
+  z-index: 1;
+}
+#main-back {
+  position: absolute;
+  width: 100%;
+  // height: 80%;
+  top: 0;
+  z-index: 0;
+  background-image: url('../images/sky_2.jpg');
+  background-position: bottom;
+  filter: blur(5px);
 }
