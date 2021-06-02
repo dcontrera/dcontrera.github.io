@@ -1,3 +1,6 @@
+setIframe();
+header_height_fn();
+
 function header_height_fn() {
     let root = document.documentElement;
     let header = document.getElementById('masthead-inner-id');
@@ -12,7 +15,7 @@ function check_section() {
     let root = document.documentElement;
     let sections = document.getElementsByTagName('section');
     let sectionsOffset = Array.from(sections).map(n => n.offsetTop);
-    sectionsOffset = sectionsOffset.sort((o1, o2) => o1 - o2).filter(o => o < window.scrollY);
+    sectionsOffset = sectionsOffset.sort((o1, o2) => o1 - o2).filter(o => o <= (window.scrollY + root.clientHeight/2));
     let section = sectionsOffset.length;
     highlightSection(section);
 }
@@ -40,6 +43,7 @@ setInterval(
         // console.log('Interval Happened');
         header_height_fn();
         // align_section();
+        setIframe();
     },
     3000
 )
@@ -89,4 +93,10 @@ function getGrandParent(node, grandParentTag) {
         }
     }
     return parent;
+}
+
+function setIframe() {
+    let myiFrame = document.getElementById("embed-pdf");
+    let w = myiFrame.clientWidth;
+    myiFrame.height = w.toString();
 }
