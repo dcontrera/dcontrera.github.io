@@ -10,7 +10,10 @@ function header_height_fn() {
 
 function check_section() {
     let root = document.documentElement;
-    let section = Math.round(window.scrollY/root.clientHeight);
+    let sections = document.getElementsByTagName('section');
+    let sectionsOffset = Array.from(sections).map(n => n.offsetTop);
+    sectionsOffset = sectionsOffset.sort((o1, o2) => o1 - o2).filter(o => o < window.scrollY);
+    let section = sectionsOffset.length;
     highlightSection(section);
 }
 
