@@ -1,7 +1,8 @@
 - name: Ubicación
   link: 
   site: map-marker
-  caption: Buenos Aires<br>Argentina
+  # caption: Buenos Aires<br>Argentina
+  caption: Argentina<br>Uruguay
 - name: Email
   link: mailto:dcontrerasosa@gmail.com
   site: envelope
